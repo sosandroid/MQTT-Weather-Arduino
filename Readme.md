@@ -31,3 +31,5 @@ Still in heavy development.
 ## Side note ##
 
 Requesting too heavilly the BMP085 device makes temperature sensing false
+
+To build the Arduino sketch, import the files one by one. The whole sketch is split to ease coding
