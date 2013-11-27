@@ -12,23 +12,32 @@ Still in heavy development.
 - Atmosphere pressure
 - Humidity
 - Publishing through MQTT
+- Multi-boards support into the code
+
+## Boards tested ##
+
+- Arduino Mega with ethernet shield
+- Arduino Ethernet R3 (without POE)
 
 
 ## Todo / Not supported ##
 
-- Connect Open.Sen.Se platform
-- Add more sensors (such as wind / rain)
 - Read settings from MQTT broker
+- Connect Open.Sen.Se platform
+- Add more sensors (such as wind / rain / GPS)
+- Use timer lib instead of delay function
+- Use cellular connection if needed - datalogger mode
+- Reduce energy draining to the maximum using other very low power board 
 
 
 ## Depends On ##
 
 - [PubSubClient modified](https://github.com/sosandroid/pubsubclient) - [Original from Nick O'Leary](https://github.com/knolleary/pubsubclient)
-- [I2CDevlib](https://github.com/jrowberg/i2cdevlib)
-- [I2CDevlib BMP085](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/BMP085)
+- [i2cdevlib](https://github.com/jrowberg/i2cdevlib)
+- [i2cdevlib's BMP085 lib](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/BMP085)
 - [SHT1x pseudo I2C library](https://github.com/practicalarduino/SHT1x)
 
-## Side note ##
+## Side notes ##
 
 Requesting too heavilly the BMP085 device makes temperature sensing false
 
